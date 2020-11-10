@@ -5,6 +5,7 @@ import numpy as np
 def showAndWait(img, string) :
     cv2.imshow(string, img)
     cv2.waitKey(0)
+    
 def openGrayimg():
     img = cv2.imread('./LenaX.png')
     imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
